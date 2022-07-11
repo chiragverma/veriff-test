@@ -20,7 +20,7 @@
         "Language": "Français",
         "Country": "France",
         "Document": "Residence Permit",
-        "launchVeriff": "incontext",
+        "launchVeriff": "redirect",
         "Message": "Vérifions votre identité"
     }
 ]
