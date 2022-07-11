@@ -1,15 +1,11 @@
 export default {
-    email: '#email',
-    number: '#cardNumber',
-    cardCvc: '#cardCvc',
+    fullName: 'input[name="name"]',
+    language: 'button[name="language"]',
+    languageDropdown: '#downshift-0-menu',
+    country: 'input[name="documentCountry"]',
     cardExpiry: '#cardExpiry',
-    name: '#billingName',
-    postalCode: '#billingPostalCode',
-    submit: '.SubmitButton',
-    submitEnabled: '.SubmitButton--complete',
-    submitDisabled: '.SubmitButton--incomplete',
-    successButton: '.SubmitButton-CheckmarkIcon--current',
-    requiredEmail: '#required-email-fieldset',
-    requiredCardDetails: '#required-cardNumber-fieldset',
-    requiredName: '#required-billingName-fieldset'
+    document: 'button[name="documentType"]',
+    documentDropdown: '#downshift-2-menu',
+    launchVeriff: 'input[name="launchVia"]',
+    submit: '[type="submit"]'
   };
