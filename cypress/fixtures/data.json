@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "John Doe",
+        "Language": "Dansk",
+        "Country": "Canada",
+        "Document": "Passport",
+        "launchVeriff": "redirect",
+        "Message": "Lad os få dig verificeret"
+    },
+    {
+        "Name": "Ron Rooney",
+        "Language": "English",
+        "Country": "United States of America",
+        "Document": "ID Card",
+        "launchVeriff": "redirect",
+        "Message": "Let's get you verified"
+    },
+    {
+        "Name": "Chloé Graftiaux",
+        "Language": "Français",
+        "Country": "France",
+        "Document": "Residence Permit",
+        "launchVeriff": "incontext",
+        "Message": "Vérifions votre identité"
+    }
+]
