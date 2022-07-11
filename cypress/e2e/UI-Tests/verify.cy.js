@@ -1,6 +1,6 @@
 import '../../support/commands.js';
 import selectors from '../../support/selectors.js';
-import testData from '../../fixtures/data.json'
+import testData from '../../fixtures/userdata.json'
 
 const url = ("https://demo.saas-3.veriff.me/")
 
