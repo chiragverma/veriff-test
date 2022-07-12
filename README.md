@@ -25,3 +25,6 @@ npx cypress run
 docker-compose up
 ```
 
+# To trigger tests manually on the CI
+
+Go to https://github.com/chiragverma/veriff-test/actions and trigger the manual workflow
