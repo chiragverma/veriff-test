@@ -2,8 +2,8 @@ version: '3'
 services:
   chrome:
     build: .
-    container_name: test-chrome
-    command: cypress run --browser chrome
+    container_name: veriff-chrome
+    command: npx cypress run
     volumes:
       - ./cypress:/cypress
       - ./package.json:/package.json
@@ -11,7 +11,7 @@ services:
 
   electron:
     build: .
-    container_name: test-headless
+    container_name: veriff-headless
     command: cypress run --headed
     volumes:
       - ./cypress:/cypress
