@@ -12,23 +12,18 @@ testData.forEach((testCase) => {
      });
 
      it('Should display the verification page once the user hits verify me', () => {
-      cy.get(selectors.fullName).clear().type(testCase.Name);
+      cy.get(selectors.fullName).clear().type(testCase.name);
       cy.get(selectors.language).click()
-      cy.get(selectors.languageDropdown).contains(testCase.Language).then(option => {
-      option[0].click();
-      // After click, it should hold the text of the selected option
-      cy.get(selectors.language).contains(testCase.Language)
-      });
-      cy.get(selectors.country).type(testCase.Country).type('{enter}')
+      cy.selectfromDropdown(selectors.languageDropdown, testCase.language, selectors.language)
+      cy.get(selectors.country).type(testCase.country).type('{enter}')
       cy.get(selectors.document).click()
-      cy.get(selectors.documentDropdown).contains(testCase.Document).then(option => {
-      option[0].click();
-      // After click, it should hold the text of the selected option
-      cy.get(selectors.document).contains(testCase.Document)
-      });
+      cy.selectfromDropdown(selectors.documentDropdown, testCase.document, selectors.document)
       cy.get(selectors.launchVeriff).check(testCase.launchVeriff)
       cy.get(selectors.submit).click()
-      cy.contains(testCase.Message)
+      //it checks if the verification message appears
+      cy.get(selectors.headerOne).contains(testCase.headerOne)
+      // it checks if the scar QR message appears
+      cy.get(selectors.headerTwo).contains(testCase.headerTwo)
 });
 });
 });

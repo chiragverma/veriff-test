@@ -2,7 +2,7 @@ version: '3'
 services:
   chrome:
     build: .
-    container_name: cypress-chrome
+    container_name: test-chrome
     command: cypress run --browser chrome
     volumes:
       - ./cypress:/cypress
@@ -11,7 +11,7 @@ services:
 
   electron:
     build: .
-    container_name: cypress-electron
+    container_name: test-headless
     command: cypress run --headed
     volumes:
       - ./cypress:/cypress

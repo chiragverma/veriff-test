@@ -1,18 +1,16 @@
 import '../../support/commands.js';
+import testdata from '../../fixtures/testdata.json'
 
 const url = ("https://magic.saas-3.veriff.me/api/v2/sessions")
 
 describe('Get session', () => {
     
   it('Should get session', () => {
-    //Access Value from Fixtures file
-    cy.fixture('testdata.json').then(function (testdata) {})
-
     cy.request({
         method: 'GET',
         url: url,
         headers: {
-          authorization: ' Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2lkIjoiZWFjOTM1MDUtN2FlMy00ODI4LWJjZGYtZWRmN2YxM2RjMjA2IiwiaWF0IjoxNjU3NTI0MDY1fQ.AncmoTZ0_vrlPkMR814YLiNc0DQ0RT42nYip9p4F2ZY'
+          authorization: 'Bearer ' + testdata.id
         }
         
     }).then((response) => {

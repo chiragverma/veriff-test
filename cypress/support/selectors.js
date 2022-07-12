@@ -7,5 +7,7 @@ export default {
     document: 'button[name="documentType"]',
     documentDropdown: '#downshift-2-menu',
     launchVeriff: 'input[name="launchVia"]',
-    submit: '[type="submit"]'
+    submit: '[type="submit"]',
+    headerOne: 'h1',
+    headerTwo: 'h2'
   };
